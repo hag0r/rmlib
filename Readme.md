@@ -14,6 +14,15 @@ Each attribute can be a primary key, a foreign, none of them, or both.
 - *Primary Key*: Primary keys are defined by underscores before and after the attribute name: `_mypk_` . There might be multiple attributes marked as primary key in a single relation
 - *Foreign key*: Foreign keys are defined by an arrow `->` followed by the relation name and attributed being referenced: `myfk -> R(a)`. `myfk` is an attribute that referenecs attribute `a` in relation `R`.
 
+## Dependencies
+
+We use the great [`https://github.com/alecthomas/participle`](https://github.com/alecthomas/participle) parser library
+
+## Limitations
+
+- Currently, a foreign key can only consist of a single attribute and reference one attribute
+
+
 ## Example 
 
 ```golang
